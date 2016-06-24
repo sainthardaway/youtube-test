@@ -7,8 +7,8 @@ class searchinputController {
     };
 
     searchVideo(root) {
-        let userinput = this.userinput;
         let searchinput = new searchinputFactory();
+        let userinput = this.userinput;
         // getting data from user input
         let searchinputResult = new Promise((resolve, reject) => {
             searchinput.getYoutubeVideos(userinput).execute( response => resolve(response.result));
@@ -21,15 +21,13 @@ class searchinputController {
         };
 
         let errorSearchinputResult = (error) => {
-            // error handling
+        // pseudo error handling
             console.log(error);
         };
 
         searchinputResult.then(succesSearchinputResult, errorSearchinputResult)
     };
 };
-
-export default searchinputController;
 
 let searchinputComponent = {
     restrict: 'E',
