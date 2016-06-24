@@ -29,6 +29,23 @@ What you need to run this app:
 * single run: `npm run build`
 * build files and watch: `npm run watch`
 
+## File Structure
+
+```
+client
+⋅⋅app/
+⋅⋅⋅⋅app.js * app entry file
+⋅⋅⋅⋅app.html * app template
+⋅⋅⋅⋅components/ * where components live
+⋅⋅⋅⋅⋅⋅components.js * components entry file
+⋅⋅⋅⋅⋅⋅somecomponent/ * home component
+⋅⋅⋅⋅⋅⋅⋅⋅somecomponent.js * somecomponent entry file (routes, configurations, and declarations occur here)
+⋅⋅⋅⋅⋅⋅⋅⋅somecomponent.component.js * somecomponent "directive"
+⋅⋅⋅⋅⋅⋅⋅⋅somecomponent.controller.js * somecomponent controller
+⋅⋅⋅⋅⋅⋅⋅⋅somecomponent.styl * somecomponent styles
+⋅⋅⋅⋅⋅⋅⋅⋅somecomponent.html * somecomponent template
+```
+
 This workflow serves as a starting point for building Angular 1.x applications using Webpack. Should be noted that apart from the pre-installed angular package, this workflow is pretty much generic.
 
 * Heavily commented webpack configuration with reasonable defaults.
