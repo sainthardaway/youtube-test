@@ -4,7 +4,7 @@
 
 ```bash
 # clone our repo
-$ git clone https://github.com/preboot/angular-webpack.git my-app
+$ git clone https://github.com/sainthardaway/youtube-test/ youtube-test
 
 # change directory to your app (youtube-test by default)
 $ cd youtube-test
