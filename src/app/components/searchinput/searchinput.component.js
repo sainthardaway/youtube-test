@@ -7,19 +7,21 @@ class searchinputController {
     };
 
     searchVideo(root) {
-        let searchinput = new searchinputFactory();
         let userinput = this.userinput;
+        let searchinput = new searchinputFactory();
+        // getting data from user input
         let searchinputResult = new Promise((resolve, reject) => {
             searchinput.getYoutubeVideos(userinput).execute( response => resolve(response.result));
         });
 
-
         let succesSearchinputResult = (response) => {
             this.parent.result = response;
+            // updating scope
             root.$apply();
         };
 
         let errorSearchinputResult = (error) => {
+            // error handling
             console.log(error);
         };
 
@@ -34,6 +36,7 @@ let searchinputComponent = {
     bindings: {
         userinput: '@'
     },
+    // grabing rootcontroller
     require: {
       parent: '^rootholder'
     },
