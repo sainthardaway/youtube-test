@@ -24,6 +24,11 @@ What you need to run this app:
 * `node` and `npm` (Use [NVM](https://github.com/creationix/nvm))
 * Ensure you're running Node (`v4.1.x`+) and NPM (`2.14.x`+)
 
+### Build files
+
+* single run: `npm run build`
+* build files and watch: `npm run watch`
+
 This workflow serves as a starting point for building Angular 1.x applications using Webpack. Should be noted that apart from the pre-installed angular package, this workflow is pretty much generic.
 
 * Heavily commented webpack configuration with reasonable defaults.
