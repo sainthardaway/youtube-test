@@ -1,3 +1,4 @@
+// rootholder for sharing data between two 'sister' components
 import angular from 'angular';
 import rootholderComponent from './rootholder.component';
 
