@@ -1,0 +1,20 @@
+<div class="video-player">
+    <div class="video-container">
+        <h3 class="video-container__title" ng-bind="vm.parent.result.items[0].snippet.title || 'Video title'"></h3>
+        <div class="video-container__player">
+            <img class="video-thumb__img" ng-src="{{vm.parent.result.items[0].snippet.thumbnails.high.url || '/img/play.svg'}}" alt="vm.parent.result.items[0].snippet.title || 'Video title'">
+        </div>
+        <div class="video-container__description">
+        </div>
+    </div>
+    <div class="video-preview">
+        <div ng-include="'views/video-sorting.html'"></div>
+        <h3 class="video-preview__title">Video previews</h3>
+        <div class="video-list">
+            <div class="video-thumb" ng-click="vm.setAsActive($event, item)" ng-repeat="item in ::vm.parent.result.items | orderBy: vm.selected track by $index ">
+                <a href="" class="video-thumb__title" ng-bind="item.snippet.title"></a>
+                <img class="video-thumb__img" ng-src="{{item.snippet.thumbnails.default.url}}" alt="{{item.snippet.title}}">
+            </div>
+        </div>
+    </div>
+</div>

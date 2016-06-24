@@ -1,0 +1,5 @@
+<form ng-submit="vm.searchVideo($root);" class="search-form">
+    <input type="text" hidden ng-model="vm.parent.result"  class="searchinput">
+    <input type="search" ng-model="vm.userinput" ng-model-options="{ updateOn: 'input', debounce: { 'default': 250, 'blur': 0 }, getterSetter: true }" class="searchinput">
+    <input type="submit" class="searchinput-button" value="Search" />
+</form>

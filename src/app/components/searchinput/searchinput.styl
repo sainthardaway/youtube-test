@@ -1,0 +1,23 @@
+searchinput
+    position relative
+    margin 0 auto
+    display block
+    width 50%
+    &::after
+        content ''
+        position absolute
+        display block
+        width 12px
+        height 12px
+        background-image url(/img/search.svg)
+        background-repeat no-repeat
+        background-size 12px
+        top 4px
+        left 4px
+
+    & .searchinput
+        width 80%
+        padding-left 20px
+
+    & .searchinput-button
+        margin-left 10px
