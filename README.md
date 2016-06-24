@@ -54,3 +54,6 @@ This workflow serves as a starting point for building Angular 1.x applications u
 * Development server with live reload.
 * Production builds with cache busting.
 * No gulp and no grunt, just npm scripts.
+
+# Demo
+(https://www.youtube.com/watch?v=5ZMo1EZaSJA&feature=youtu.be)
