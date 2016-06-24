@@ -7,7 +7,13 @@
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
     "start": "npm run server"
   },
+    "repository": 
+  {
+    "type": "git",
+    "url": "https://github.com/sainthardaway/youtube-test/"
+  },
   "author": "Gunko Valentine",
+  "license": "MIT",
   "dependencies": {
     "angular": "1.5.5"
   },
