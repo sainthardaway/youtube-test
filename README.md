@@ -16,6 +16,8 @@ $ npm install
 $ npm start
 ```
 
+go to [http://localhost:8080](http://localhost:8080) in your browser.
+
 This workflow serves as a starting point for building Angular 1.x applications using Webpack. Should be noted that apart from the pre-installed angular package, this workflow is pretty much generic.
 
 * Heavily commented webpack configuration with reasonable defaults.
