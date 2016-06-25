@@ -11,7 +11,7 @@
         <div ng-include="'views/video-sorting.html'"></div>
         <h3 class="video-preview__title">Video previews</h3>
         <div class="video-list">
-            <div class="video-thumb" ng-click="vm.setAsActive($event, item)" ng-repeat="item in ::vm.parent.result.items | orderBy: vm.selected track by $index ">
+            <div class="video-thumb" ng-click="vm.setAsActive($event, item)" ng-repeat="item in vm.parent.result.items | orderBy: vm.selected track by $index ">
                 <a href="" class="video-thumb__title" ng-bind="item.snippet.title"></a>
                 <img class="video-thumb__img" ng-src="{{item.snippet.thumbnails.default.url}}" alt="{{item.snippet.title}}">
             </div>
