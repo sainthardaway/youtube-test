@@ -25,7 +25,7 @@ class searchinputController {
             console.log(error);
         };
 
-        searchinputResult.then(succesSearchinputResult, errorSearchinputResult)
+        searchinputResult.then(succesSearchinputResult, errorSearchinputResult);
     };
 };
 
